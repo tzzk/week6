@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercise</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="main.css"></link>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+            integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+                integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+                crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+                integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+                crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+                integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+                crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        <!--Navigation bar creation-->
+        <nav class="navbar navbar-expand-md navbar-dark bg-secondary">
+            
+            <div class="container">
+                <!--logo image insertion-->
+                <a class="navbar-brand"><img src="logo.png" width="100px"></a>
+                <!--button toggle insertiona and linking-->
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#collapseMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapseMenu">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item"><a class="nav-link">Home</a></li>
+                        <li class="nav-item"><a class="nav-link">Admission</a></li>
+                        <li class="nav-item"><a class="nav-link">About Us</a></li>
+                        <!--dropdown menu creation-->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="depttoggle" data-toggle="dropdown">Departments</a>
+                            <div class="dropdown-menu" aria-labelledby="depttoggle">
+                                <a class="dropdown-item">Computer Science</a>
+                                <a class="dropdown-item">Archi</a>
+                                <a class="dropdown-item">Electronics Engineering</a>
+                            </div>
+                        
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+
+        </nav>
+        <!--Carousel (Slider with pictures)-->
+        <div class="carousel slide carousel-fade" data-ride="carousel" id="myslider">
+            <!--indicator(--- insertion in slide)-->
+            <ol class="carousel-indicators">
+                <li data-target="#myslider" data-slide-to="0"></li>
+                <li data-target="#myslider" data-slide-to="1"></li>
+                <li data-target="#myslider" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active image1">
+                    <img src="banner1.jpg" class="d-block w-100">
+                    <!--caption on photo-->
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6"></div>
+                                <div class="col-md-6"><h2>Mandalay</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus cumque velit perspiciatis magnam accusantium quasi
+                                    unde. Soluta quas quisquam alias, accusamus totam qui tempore odio ipsum aliquam porro. Dolore, dolorum?</p></div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="carousel-item image1" >
+                    <img src="banner2.jpg" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h2>Mandalay</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus cumque velit perspiciatis magnam accusantium quasi
+                            unde. Soluta quas quisquam alias, accusamus totam qui tempore odio ipsum aliquam porro. Dolore, dolorum?</p>
+                    </div>
+                </div>
+                <div class="carousel-item image1">
+                    <img src="banner3.jpg" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h2>Mandalay</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus cumque velit perspiciatis magnam accusantium quasi
+                            unde. Soluta quas quisquam alias, accusamus totam qui tempore odio ipsum aliquam porro. Dolore, dolorum?</p>
+                    </div>
+                </div>
+            </div>
+            <!--controls (Next/previous slide)-->
+            <a  class="carousel-control-prev" href="#myslider" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#myslider" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+
+        </div>
+    
+        <div class="container">
+            <div class="row my-5">
+
+                <div class="col-md-4">
+                    <div class="border border-success rounded bg-secondary px-2 box">
+                        <h1 class=" h1 text-primary text-center">Our Objectives</h1>
+                        <p class="text-light">It is envisaged that YTU will become a highly-prestigious technological centre of excellence in teaching and research
+                        with a strong commitment to systematically educate and train</p>
+                        <!--Read More button-->
+                        <a class="btn btn-danger float-right">Read More</a>
+                     </div>
+                </div>
+
+                <div class="col-md-4 ">
+                    <div class="border border-danger rounded bg-secondary px-2 box">
+                        <!--text-center/left/right using-->
+                    <h1 class="h1 text-primary text-center">Our Mission</h1>
+                    <p class="text-light">To educate and train students systematically to become engineers, specialists and researchers who can effectively
+                    contribute to the building of a modern developed nation</p>
+                    <a class="btn btn-warning float-right mt-3">Read More</a>
+                </div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="border border-warning rounded bg-secondary px-2 box">
+                        <h1 class="h1 text-primary text-center">Programs</h1>
+                        <p class="text-light">when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only
+                        five centuries, but also the leap into electronic typesetting,</p>
+                        <a class="btn btn-danger float-right mt-3">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Card format creation-->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="flower.jpg" class="card-img-top w-100px" height="100px" >
+                        <div class="card-body">
+                            <div class="card-title">Birthday Gifts</div>
+                            <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit recusandae id numquam perferendis earum? Sed, laborum doloremque, cumque provident expedita odio, qui ipsum debitis autem aliquid enim totam molestias. Assumenda.</div>
+                            <a class="card-link btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                    <img src="happy1.jpg" class="card-img-top w-100px" height="100px">
+                    <div class="card-body">
+                        <div class="card-title">Birthday Gifts</div>
+                        <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit recusandae id numquam
+                            perferendis earum? Sed, laborum doloremque, cumque provident expedita odio, qui ipsum debitis autem aliquid enim
+                            totam molestias. Assumenda.</div>
+                        <a class="card-link btn btn-primary">Read More</a>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="happy.jpg" class="card-img-top w-100px" height="100px">
+                        <div class="card-body">
+                            <div class="card-title">Birthday Gifts</div>
+                            <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit recusandae id
+                                numquam
+                                perferendis earum? Sed, laborum doloremque, cumque provident expedita odio, qui ipsum debitis autem
+                                aliquid enim
+                                totam molestias. Assumenda.</div>
+                            <a class="card-link btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
